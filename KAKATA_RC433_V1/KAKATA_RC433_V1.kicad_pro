@@ -649,6 +649,14 @@
     [
       "3e9aafa2-277d-4a4d-8168-aa8a21a89e90",
       "Root"
+    ],
+    [
+      "8bc12d9b-d91d-40c6-b04e-7ece9a4dd345",
+      "leds"
+    ],
+    [
+      "a03a966d-af29-4543-a59c-7186ba9f06a0",
+      "BOTONES_LATERALES"
     ]
   ],
   "text_variables": {}
