@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "38fc8306-842b-486e-9c8a-768628e545b9")
-	(paper "A4")
+	(paper "USLedger")
 	(lib_symbols
 		(symbol "Capacitor_US_AKL:C_0603"
 			(pin_numbers
@@ -1099,6 +1099,38 @@
 		(color 0 0 0 0)
 		(uuid "fee8c3fb-f73f-48e5-bca1-23d417ccd2a2")
 	)
+	(no_connect
+		(at 118.11 101.6)
+		(uuid "01c9531e-0b8e-44ea-80fe-a9769ab9775b")
+	)
+	(no_connect
+		(at 118.11 87.63)
+		(uuid "19d5f82e-da45-4529-8522-c8cedd3f80fc")
+	)
+	(no_connect
+		(at 128.27 106.68)
+		(uuid "1f31b162-9a33-4cf0-a721-da9b7f652447")
+	)
+	(no_connect
+		(at 128.27 120.65)
+		(uuid "27fab246-9438-49cb-9719-50bbed15ffbd")
+	)
+	(no_connect
+		(at 128.27 78.74)
+		(uuid "4d3e5356-bb19-4719-b9a8-a66ff8a501c8")
+	)
+	(no_connect
+		(at 128.27 92.71)
+		(uuid "76ffc736-2946-4345-98e1-71c0ca85fdd6")
+	)
+	(no_connect
+		(at 118.11 73.66)
+		(uuid "ab21d2bd-fd01-4bdc-9661-ae7a9a687cf2")
+	)
+	(no_connect
+		(at 118.11 115.57)
+		(uuid "f91eca1f-771e-4390-ab91-507c4d7a8400")
+	)
 	(wire
 		(pts
 			(xy 143.51 59.69) (xy 132.08 59.69)
@@ -1211,7 +1243,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 73.66) (xy 165.1 125.73)
+			(xy 165.1 73.66) (xy 165.1 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1371,7 +1403,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 133.35) (xy 165.1 135.89)
+			(xy 165.1 132.08) (xy 165.1 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1676,17 +1708,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Capacitor_US_AKL:C_0603")
-		(at 132.08 128.27 0)
+		(lib_id "Resistor_US_AKL:R_0603")
+		(at 143.51 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "313a7ce9-ce07-4b3f-9379-7d9b353642f5")
-		(property "Reference" "C18"
-			(at 135.89 126.9999 0)
+		(uuid "186c7259-8390-45c5-99f2-bbe2bc5f17b7")
+		(property "Reference" "R16"
+			(at 145.034 64.262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1694,14 +1725,239 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 135.89 129.5399 0)
+		(property "Value" "22K"
+			(at 145.034 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
+			(at 143.51 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART_NUMBER" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOL" "1%"
+			(at 146.304 68.8341 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d288419-44de-475c-8132-fda39f04e603")
+		)
+		(pin "2"
+			(uuid "c693dcc0-8300-4142-af17-b662dd654b06")
+		)
+		(instances
+			(project "KAKATA_RC433_V1"
+				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Resistor_US_AKL:R_0603")
+		(at 153.67 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2881c06f-fba4-429b-98e8-fa4fe7aedf17")
+		(property "Reference" "R17"
+			(at 155.194 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22K"
+			(at 155.194 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART_NUMBER" ""
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 153.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOL" "1%"
+			(at 156.464 68.8341 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a669f77f-84d5-4033-8dec-4f46d27583ab")
+		)
+		(pin "2"
+			(uuid "6d3e1b9c-b2c9-4d26-8526-161b7076ab38")
+		)
+		(instances
+			(project "KAKATA_RC433_V1"
+				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capacitor_US_AKL:C_0603")
+		(at 132.08 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "313a7ce9-ce07-4b3f-9379-7d9b353642f5")
+		(property "Reference" "C18"
+			(at 133.604 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 133.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
@@ -1731,6 +1987,49 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "72c8d582-4995-4f52-83bd-3a8934cb9869")
 		)
@@ -1741,6 +2040,119 @@
 			(project ""
 				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Resistor_US_AKL:R_0603")
+		(at 165.1 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b454006-2dbd-41ae-9d24-ee8679a7060c")
+		(property "Reference" "R18"
+			(at 166.624 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22K"
+			(at 166.624 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PART_NUMBER" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOL" "1%"
+			(at 167.894 68.8341 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94f840a7-0733-440c-a890-c88255e187fe")
+		)
+		(pin "2"
+			(uuid "46cb6f15-753e-48b4-a4f9-92375852ef03")
+		)
+		(instances
+			(project "KAKATA_RC433_V1"
+				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -1808,6 +2220,51 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOL" ""
+			(at 123.19 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "29ce32d2-19b9-4734-bdab-0f7ba80a2934")
 		)
@@ -1824,147 +2281,6 @@
 			(project "KAKATA_RC433_V1"
 				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
 					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Resistor_US_AKL:R_0603")
-		(at 153.67 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ffaa1f3-2755-4a4d-971a-8f901ee6887a")
-		(property "Reference" "R17"
-			(at 156.21 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_0603"
-			(at 156.21 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 153.67 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
-			(at 153.67 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35df5875-5f83-4795-9522-d6245b49fd37")
-		)
-		(pin "2"
-			(uuid "1e127534-ce88-405f-a3fb-2a122144d812")
-		)
-		(instances
-			(project "KAKATA_RC433_V1"
-				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Capacitor_US_AKL:C_0603")
-		(at 153.67 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a89a0206-1e85-4258-9b12-737090998469")
-		(property "Reference" "C20"
-			(at 157.48 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_0603"
-			(at 157.48 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
-			(at 154.6352 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
-			(at 153.67 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a9d8a859-e959-484a-b43c-d23baaec8896")
-		)
-		(pin "1"
-			(uuid "46c49d21-fc9f-4b08-a1a4-f2fcb4cad854")
-		)
-		(instances
-			(project "KAKATA_RC433_V1"
-				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
-					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -2098,6 +2414,49 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 123.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 123.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 123.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 123.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 123.19 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "f8cc1475-b8e5-45ca-a473-82390cb28b38")
 		)
@@ -2120,17 +2479,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Resistor_US_AKL:R_0603")
-		(at 165.1 66.04 0)
+		(lib_id "Capacitor_US_AKL:C_0603")
+		(at 153.67 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4076c64-04f9-4797-8a01-d9ea244a2006")
-		(property "Reference" "R18"
-			(at 167.64 64.7699 0)
+		(uuid "afdabe0a-0cee-42e6-ba83-434f682d445b")
+		(property "Reference" "C20"
+			(at 155.194 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2138,8 +2496,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 167.64 67.3099 0)
+		(property "Value" "100nF"
+			(at 154.94 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2147,8 +2505,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 165.1 77.47 0)
+		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
+			(at 154.6352 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2157,7 +2515,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 66.04 0)
+			(at 153.67 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2165,8 +2523,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
-			(at 165.1 66.04 0)
+		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
+			(at 153.67 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,33 +2532,75 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "ba7b52f6-6f1b-4cb2-8618-1b5dcd1ca7a0")
+		(property "PART_NUMBER" ""
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 153.67 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "93b497ab-8697-43fe-affa-d3b82823984e")
+			(uuid "6397e60f-fc4a-4af8-b2e1-5566f4a7277a")
+		)
+		(pin "1"
+			(uuid "12e70972-0b29-404c-ad21-954c53d403b7")
 		)
 		(instances
 			(project "KAKATA_RC433_V1"
 				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
-					(reference "R18")
+					(reference "C20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Resistor_US_AKL:R_0603")
-		(at 143.51 66.04 0)
+		(lib_id "Capacitor_US_AKL:C_0603")
+		(at 143.51 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc2b90ae-ff22-4660-bd62-0b834ae4b630")
-		(property "Reference" "R16"
-			(at 146.05 64.7699 0)
+		(uuid "c371b1b7-bd2c-4df4-9ed4-f5fa2e919f57")
+		(property "Reference" "C19"
+			(at 145.034 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,18 +2608,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 146.05 67.3099 0)
+		(property "Value" "100nF"
+			(at 144.78 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
-			(at 143.51 77.47 0)
+		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
+			(at 144.4752 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2228,7 +2627,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 66.04 0)
+			(at 143.51 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,8 +2635,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMD 0603 Chip Resistor, US Symbol, Alternate KiCad Library"
-			(at 143.51 66.04 0)
+		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
+			(at 143.51 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2245,16 +2644,59 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f7fb1e16-4344-4dd0-91c9-422fc00783f9")
+		(property "PART_NUMBER" ""
+			(at 143.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 143.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 143.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 143.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 143.51 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "6b47f944-453c-4860-8c15-2690a6d60f92")
+			(uuid "7d1f96d8-f8e0-4f99-ba21-75b140bb14c1")
+		)
+		(pin "1"
+			(uuid "0dbc2263-0493-49f7-a06f-9e4eab21cc17")
 		)
 		(instances
 			(project "KAKATA_RC433_V1"
 				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
-					(reference "R16")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -2322,6 +2764,49 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 123.19 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "bcb5c9a9-6a15-4ac8-bb84-602ba8735e52")
 		)
@@ -2345,16 +2830,15 @@
 	)
 	(symbol
 		(lib_id "Capacitor_US_AKL:C_0603")
-		(at 165.1 129.54 0)
+		(at 165.1 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3c77ff7-99e4-4c2b-8743-476f99cd3c21")
+		(uuid "dfdeddd2-d8cf-4eba-b23c-dfa2c6de7d70")
 		(property "Reference" "C21"
-			(at 168.91 128.2699 0)
+			(at 166.624 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2362,18 +2846,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_0603"
-			(at 168.91 130.8099 0)
+		(property "Value" "100nF"
+			(at 166.37 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
-			(at 166.0652 133.35 0)
+			(at 166.0652 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +2865,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 129.54 0)
+			(at 165.1 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2874,7 @@
 			)
 		)
 		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
-			(at 165.1 129.54 0)
+			(at 165.1 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,11 +2882,54 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
-			(uuid "5ba0e3ff-9585-4a5c-821b-fdb9607235b2")
+			(uuid "8c07d4db-a823-45da-b4f2-c1016ad2ff5e")
 		)
 		(pin "1"
-			(uuid "f7c593bc-d29b-4458-8478-4446bcd40b22")
+			(uuid "4e29200d-36c0-46d3-8812-b23a04f332b8")
 		)
 		(instances
 			(project "KAKATA_RC433_V1"
@@ -2422,10 +2948,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e740eec6-c942-41c4-a8d2-f8d7d8e061fa")
 		(property "Reference" "R15"
-			(at 134.62 64.7699 0)
+			(at 133.604 64.262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,14 +2958,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_0603"
-			(at 134.62 67.3099 0)
+		(property "Value" "22K"
+			(at 133.604 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
@@ -2470,6 +2994,50 @@
 				(hide yes)
 			)
 		)
+		(property "PART_NUMBER" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TOL" "1%"
+			(at 134.874 68.8341 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54e8d44f-c15c-47c6-9e80-65a871dcc3bc")
 		)
@@ -2480,77 +3048,6 @@
 			(project ""
 				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Capacitor_US_AKL:C_0603")
-		(at 143.51 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f023337b-a732-460e-acf4-0b665c18241a")
-		(property "Reference" "C19"
-			(at 147.32 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_0603"
-			(at 147.32 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD_AKL:C_0603_1608Metric"
-			(at 144.4752 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SMD 0603 MLCC capacitor, Alternate KiCad Library"
-			(at 143.51 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "aa32ea28-e169-4f32-91d3-0fea3e9b5a03")
-		)
-		(pin "1"
-			(uuid "6ebc4bd7-d40e-4270-9973-431d1cbfd327")
-		)
-		(instances
-			(project "KAKATA_RC433_V1"
-				(path "/3e9aafa2-277d-4a4d-8168-aa8a21a89e90/a03a966d-af29-4543-a59c-7186ba9f06a0"
-					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -2616,6 +3113,49 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "PART_NUMBER" ""
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VOL" ""
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TOL" ""
+			(at 123.19 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"

@@ -41,14 +41,14 @@
           "height": 1.27,
           "width": 2.54
         },
-        "silk_line_width": 0.1,
+        "silk_line_width": 0.127,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.508,
+        "silk_text_size_v": 0.508,
+        "silk_text_thickness": 0.127,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3048
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|165027000|119766500|bd8977ea-ae55-42b8-bf23-bf3c4026a968|bbfc4f2c-a731-4fe5-952c-aa4dc5256f40",
+          ""
+        ],
+        [
+          "clearance|170877000|119766500|89e4b745-beb0-4836-89a6-acc2f1c8f93d|0adf3ba1-ada0-4892-8bd1-5680a8229a21",
+          ""
+        ],
+        [
+          "copper_edge_clearance|118159698|118240697|67f353a8-6deb-4b65-b074-9dc0fd019ed2|677a88d7-fb7d-4db9-9af6-4d02bd7d3433",
+          ""
+        ],
+        [
+          "copper_edge_clearance|129250000|114250000|a0db3a7a-1c95-462c-8b96-5947df8a501e|b4b5a4fd-2a1f-4947-b75e-dc857da20aa4",
+          ""
+        ],
+        [
+          "copper_edge_clearance|159716606|187934205|307cdad5-22ed-4daa-a7f6-a56822eb0476|bdc72bbc-e7dc-4e5f-9bdb-dbe2430d8fd4",
+          ""
+        ],
+        [
+          "copper_edge_clearance|270000000|114250000|a0db3a7a-1c95-462c-8b96-5947df8a501e|fc2d9b34-e198-4367-a6ea-45fbbf6de45b",
+          ""
+        ],
+        [
+          "copper_edge_clearance|281181900|117568100|822a4191-de47-401b-9914-fcc234dd534e|42654c13-fe17-492f-9dc1-b0f60b8e90f4",
+          ""
+        ],
+        [
+          "lib_footprint_issues|136361500|124342500|fa4afd2d-51fa-479d-b6e5-c092c7cd50b6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|244793000|117723000|528396c1-336a-4826-a4e9-493b3789e027|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -97,12 +134,12 @@
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
-        "padstack": "warning",
+        "padstack": "ignore",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -123,22 +160,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.1524,
+        "min_connection": 0.1524,
+        "min_copper_edge_clearance": 0.3048,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.1524,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_silk_clearance": 0.0508,
+        "min_text_height": 0.508,
+        "min_text_thickness": 0.127,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.25,
+        "min_track_width": 0.1524,
+        "min_via_annular_width": 0.0,
+        "min_via_diameter": 0.254,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -188,7 +225,14 @@
       ],
       "track_widths": [
         0.0,
-        0.2
+        0.1524,
+        0.2032,
+        0.254,
+        0.3048,
+        0.3556,
+        0.508,
+        0.762,
+        1.2192
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -222,8 +266,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.6,
-          "drill": 0.3
+          "diameter": 0.6096,
+          "drill": 0.3048
         }
       ],
       "zones_allow_external_fillets": false
@@ -244,7 +288,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|292100|2260600|c079caa2-792b-49c7-b01c-99228d1868de|e8165e00-6708-4c1e-8ace-387b9b9536a1|/3e9aafa2-277d-4a4d-8168-aa8a21a89e90|/3e9aafa2-277d-4a4d-8168-aa8a21a89e90|/3e9aafa2-277d-4a4d-8168-aa8a21a89e90",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -447,9 +496,9 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_not_driven": "ignore",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -508,7 +557,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../../temp/KAKATA_RC433_V1.step",
       "svg": "",
       "vrml": ""
     },
@@ -595,6 +644,150 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC PN",
+          "name": "LCSC PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CURRENT",
+          "name": "CURRENT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_PN",
+          "name": "LCSC_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LSC_PN",
+          "name": "LSC_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PART_NUMBER",
+          "name": "PART_NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TOL",
+          "name": "TOL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "VOL",
+          "name": "VOL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Verificado",
+          "name": "Verificado",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
           "show": false
         }
       ],
