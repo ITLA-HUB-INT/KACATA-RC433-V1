@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "USLedger")
+	(title_block
+		(title "KAKATA RC433")
+		(date "2026-02-22")
+		(rev "V1")
+		(company "ITLA-HUB")
+		(comment 1 "Desing: Carlos Pichardo")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(4 "In1.Cu" signal)
@@ -1841,7 +1848,7 @@
 			(remove_unused_layers no)
 			(net 11 "/JOY0_BTN")
 			(pintype "passive")
-			(uuid "d8e85df7-9a0f-4f38-b0d8-4934c959b1a2")
+			(uuid "bdce06d9-0657-4c97-b358-6b6e65bcb637")
 		)
 		(pad "8" thru_hole circle
 			(at -6.7 -4.2)
@@ -1861,7 +1868,7 @@
 			(remove_unused_layers no)
 			(net 1 "GND")
 			(pintype "passive")
-			(uuid "97535e12-7a3f-42cd-a42a-d0c1f9e3d389")
+			(uuid "669ca9cb-3392-423a-8005-66ac4c997dc1")
 		)
 		(pad "9" thru_hole circle
 			(at -5.1 -8.7)
@@ -3892,7 +3899,7 @@
 		(uuid "244be759-60b9-4388-b348-a6f5a7da59e9")
 		(at 193.802 180.594 -90)
 		(property "Reference" "U7"
-			(at -2.018 -3.108 180)
+			(at -2.018 -3.108 0)
 			(layer "F.SilkS")
 			(uuid "5253c202-744c-4813-a407-515ce7554de3")
 			(effects
@@ -4066,13 +4073,13 @@
 		(embedded_fonts no)
 		(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl"
 			(offset
-				(xyz -941.76 660.4 -0)
+				(xyz 0 0 -0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 	)
@@ -9632,7 +9639,7 @@
 			(net 1 "GND")
 			(pinfunction "SHELL")
 			(pintype "unspecified")
-			(uuid "191bcc4b-e1f1-4102-9230-8829a307288c")
+			(uuid "7129e6e2-354b-4834-a27c-2c82b64aef03")
 		)
 		(pad "14" thru_hole oval
 			(at 4.32 -1.83 180)
@@ -9654,18 +9661,29 @@
 			(net 1 "GND")
 			(pinfunction "SHELL")
 			(pintype "unspecified")
-			(uuid "e6587718-a427-42ce-b1fd-6d81a7ef4d5d")
+			(uuid "79e0ee7f-7c1f-466f-b7c9-78a0a2598948")
 		)
 		(embedded_fonts no)
 		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/USB-C-SMD_TYPE-C-6PIN-2MD-073.wrl"
 			(offset
-				(xyz 0 -1.2 0.9)
+				(xyz -2.54 -3.104999988 -1.004999997)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 180 180)
+			)
+		)
+		(model "C:/DATA/RESOURCE/KiCAD/KICAD_3RD_PARTY/EasyEDA.3dshapes/USB-C-SMD_TYPE-C-6PIN-2MD-073.wrl"
+			(offset
+				(xyz 0 -1.27 1.778)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12750,7 +12768,7 @@
 			(remove_unused_layers no)
 			(net 14 "/JOY1_BTN")
 			(pintype "passive")
-			(uuid "02d8dfa3-e194-48c9-b5be-c53a73787cc8")
+			(uuid "6b9a2684-c7e7-4ced-95a8-b190fe2b7927")
 		)
 		(pad "8" thru_hole circle
 			(at -6.7 -4.2)
@@ -12770,7 +12788,7 @@
 			(remove_unused_layers no)
 			(net 1 "GND")
 			(pintype "passive")
-			(uuid "156f5a06-980f-413d-862c-61f0d444fd9b")
+			(uuid "54bc68c2-cb20-45f6-b5af-f2504586b7b6")
 		)
 		(pad "9" thru_hole circle
 			(at -5.1 -8.7)
@@ -15331,7 +15349,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "f3025622-cf14-4254-9b86-bd67845af950")
 		)
 		(pad "41" smd rect
 			(at -2.9 0.23 90)
@@ -15340,7 +15358,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "15b38150-3525-4d96-af47-777ea55daced")
 		)
 		(pad "41" smd rect
 			(at -1.5 -2.57 90)
@@ -15349,7 +15367,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "a72bff25-8018-4c27-8460-ca0cec768556")
 		)
 		(pad "41" smd rect
 			(at -1.5 -1.17 90)
@@ -15358,7 +15376,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "e3abfe3d-4895-4dff-a2cb-512265b77a3d")
 		)
 		(pad "41" smd rect
 			(at -1.5 0.23 90)
@@ -15367,7 +15385,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "892f753c-8ea4-45e2-9dda-6c84b1bc1272")
 		)
 		(pad "41" smd rect
 			(at -0.1 -2.57 90)
@@ -15376,7 +15394,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "d09c3437-577e-4bc3-a55a-b6ca5667b233")
 		)
 		(pad "41" smd rect
 			(at -0.1 -1.17 90)
@@ -15385,7 +15403,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "b2e03097-f8a5-4612-a667-736aaa8ec617")
 		)
 		(pad "41" smd rect
 			(at -0.1 0.23 90)
@@ -15394,7 +15412,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "08798026-3761-4cf4-91f4-102cd1aca27d")
+			(uuid "99a2165d-4ab8-48eb-9ef4-30b783d36dc2")
 		)
 		(embedded_fonts no)
 		(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/WIRELM-SMD_ESP32-S3-WROOM-1U.wrl"
@@ -21327,7 +21345,7 @@
 			(uuid "a2a883ec-5f27-4aa7-9ff7-6aca738440ef")
 		)
 		(embedded_fonts no)
-		(model "Housings_SOIC.3dshapes/SOIC-16_3.9x9.9mm_Pitch1.27mm.wrl"
+		(model "C:/Program Files/KiCad/9.0/share/kicad/3dmodels/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -28092,17 +28110,43 @@
 		(layer "User.1")
 		(uuid "e747cea5-40d4-463e-b642-5661757ebf46")
 	)
-	(gr_text "RF-CONTROL V1"
-		(at 248.726 175.528 0)
+	(gr_text "V1"
+		(at 252.79 176.036 0)
 		(layer "F.SilkS")
-		(uuid "5290f422-cdd8-4f15-a95d-f9f3b2a1ccbc")
+		(uuid "5ee44a9e-06de-454a-ad97-c91af2520921")
 		(effects
 			(font
-				(size 1.016 1.016)
-				(thickness 0.2032)
+				(size 1.5 1.5)
+				(thickness 0.3)
 				(bold yes)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "KAKATA-RC433"
+		(at 244.916 172.48 0)
+		(layer "F.SilkS")
+		(uuid "9a628860-2b20-40cc-9ee4-5c4b34422d8a")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "ITLA-HUB\nFEB-2026"
+		(at 254.314 181.624 0)
+		(layer "F.SilkS")
+		(uuid "fdc6775d-3383-4462-98e4-a31207fcf210")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify bottom)
 		)
 	)
 	(gr_text_box ""
