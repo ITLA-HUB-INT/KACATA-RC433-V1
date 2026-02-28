@@ -60,11 +60,11 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|165027000|119766500|bd8977ea-ae55-42b8-bf23-bf3c4026a968|bbfc4f2c-a731-4fe5-952c-aa4dc5256f40",
+          "clearance|165027000|119766500|bbfc4f2c-a731-4fe5-952c-aa4dc5256f40|bd8977ea-ae55-42b8-bf23-bf3c4026a968",
           ""
         ],
         [
-          "clearance|170877000|119766500|89e4b745-beb0-4836-89a6-acc2f1c8f93d|0adf3ba1-ada0-4892-8bd1-5680a8229a21",
+          "clearance|170877000|119766500|0adf3ba1-ada0-4892-8bd1-5680a8229a21|89e4b745-beb0-4836-89a6-acc2f1c8f93d",
           ""
         ],
         [
@@ -73,10 +73,6 @@
         ],
         [
           "copper_edge_clearance|129250000|114250000|a0db3a7a-1c95-462c-8b96-5947df8a501e|b4b5a4fd-2a1f-4947-b75e-dc857da20aa4",
-          ""
-        ],
-        [
-          "copper_edge_clearance|159716606|187934205|307cdad5-22ed-4daa-a7f6-a56822eb0476|bdc72bbc-e7dc-4e5f-9bdb-dbe2430d8fd4",
           ""
         ],
         [
@@ -600,6 +596,12 @@
         },
         {
           "group_by": true,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -614,7 +616,7 @@
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -626,12 +628,6 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part",
-          "name": "LCSC Part",
           "show": false
         },
         {
@@ -788,6 +784,12 @@
           "group_by": false,
           "label": "Description_1",
           "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dielec",
+          "name": "Dielec",
           "show": false
         }
       ],
